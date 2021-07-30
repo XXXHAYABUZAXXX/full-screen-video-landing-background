@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.showcase .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #3a4052 url("/file/cover.jpg") no-repeat center center/cover;
+}
+
+.showcase .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.showcase .video-container video {
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.showcase .content {
+  z-index: 1;
+}
+
+.showcase .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #3a4052;
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 5px;
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+.showcase .content .btn:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#about {
+  text-align: center;
+  padding: 40px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+#about h2 {
+  margin: 30px 0;
+  color: #3a4052;
+}
+
+#about .social a {
+  margin: 0 5px;
+  color: #3a4052;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
